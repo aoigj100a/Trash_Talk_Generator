@@ -25,7 +25,7 @@
 `npm run dev`
 
 4. 使用瀏覽器瀏覽
-> 打開瀏覽器在網址列輸入 localhost:3000 即可瀏覽
+> 打開瀏覽器在網址列輸入 [localhost:3000](http://localhost:3000) 即可瀏覽
 
 ## 專案開發人員
 
