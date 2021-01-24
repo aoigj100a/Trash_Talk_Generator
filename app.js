@@ -20,7 +20,15 @@ app.get('/', (req, res) => {
 app.post('/', (req, res) => {
     //取得處理好的結果 並且傳送至index 印在畫面
     let result = talkShit(req.body)
+
     //保留使用者輸入的資料
+    if(req.body.jobs ==="工程師"){
+        req.body.no1 = true
+    }else if (req.body.jobs ==="設計師"){
+        req.body.no2 = true
+    }else if(req.body.jobs ==="創業家"){
+        req.body.no3 = true
+    }
     const options = req.body
     
     res.render('index', { result, options })

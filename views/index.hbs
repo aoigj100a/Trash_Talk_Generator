@@ -7,21 +7,21 @@
             <div class="col-sm text-center d-flex flex-column">
                 <img id="myimg" class="rounded img-thumbnail"
                     src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg" alt="">
-                <div class="mt-2"><input type="radio" name="jobs" value="工程師">
+                <div class="mt-2"><input type="radio" name="jobs" value="工程師" {{#if options.no1 }} checked {{/if}}>
                     <scan class="ml-2" style="font-size:1.2rem;">工程師</scan>
                 </div>
             </div>
             <div class="col-sm text-center d-flex flex-column">
                 <img id="myimg" class="rounded img-thumbnail"
                     src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg" alt="">
-                <div class="mt-2"><input type="radio" name="jobs" value="設計師">
+                <div class="mt-2"><input type="radio" name="jobs" value="設計師" {{#if options.no2 }} checked {{/if}}>
                     <scan class="ml-2" style="font-size:1.2rem;">設計師</scan>
                 </div>
             </div>
             <div class="col-sm text-center d-flex flex-column">
                 <img id="myimg" class="rounded img-thumbnail"
                     src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg" alt="">
-                <div class="mt-2"><input type="radio" name="jobs" value="創業家">
+                <div class="mt-2"><input type="radio" name="jobs" value="創業家" {{#if options.no3 }} checked {{/if}}>
                     <scan class="ml-2" style="font-size:1.2rem;">創業家</scan>
                 </div>
             </div>
