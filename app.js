@@ -10,7 +10,13 @@ app.use(express.static('public'))
 app.use(bodyParser.urlencoded({ extended: true }))
 
 app.get('/',(req, res)=>{
-    res.send('講幹話要開始囉')
+    // res.send('講幹話要開始囉')  
+    res.render('index')
+})
+//取得表單資料
+app.post('/',(req, res)=>{
+    console.log(`req.body.jobs:${req.body.jobs}`)
+
 })
 
 app.listen(port,()=>{
