@@ -7,7 +7,7 @@
             <div class="col-sm text-center d-flex flex-column">
                 <img id="myimg" class="rounded img-thumbnail"
                     src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg" alt="">
-                <div class="mt-2"><input type="radio" name="jobs" value="工程師">
+                <div class="mt-2"><input type="radio" name="jobs" value="工程師" {{#if options.jobs :'' }} checked{{/if}}>
                     <scan class="ml-2" style="font-size:1.2rem;">工程師</scan>
                 </div>
             </div>
@@ -28,7 +28,7 @@
         </div>
         <div class="d-flex align-items-center justify-content-center m-3">
             <button type="submit" class="btn btn-dark shit-btn mx-5">產生幹話</button>
-            <textarea class="talk-shit" placeholder=" ！＠＃＄％＾＆＊（） " id="generate" class="p-1"></textarea>
+            <textarea class="talk-shit" placeholder=" ！＠＃＄％＾＆＊（） " id="generate" class="p-1">{{result}}</textarea>
         </div>
     </form>
 </div>
